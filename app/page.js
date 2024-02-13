@@ -1,15 +1,14 @@
+import Image from 'next/image';
+import DGlogo from "../public/DG-logo.svg";
 export default function Home() {
-  return (
-    <main className="flex min-h-screen flex-col items-center justify-between p-24">
-      <div className="z-10 max-w-5xl w-full items-center justify-between font-sans text-sm lg:flex">
-        <p className="fixed left-0 top-0 flex w-full justify-center border-b border-gray-100 dark:border-neutral-800 lg:static lg:w-auto  lg:rounded-xl lg:border lg:bg-blue-300 lg:p-4 ">
-          Get started by Pavel Cherenkov2&nbsp;
-          <code className="font-mono font-bold">app/page.js</code>
-        </p>
-        <h1 className="mb-4 text-4xl font-normal leading-none tracking-tight text-gray-700 md:text-3xl lg:text-5xl :text-gray">
-          NextJS Worked
-        </h1>
-        </div>
-    </main>
-  );
+    return (
+        <main
+            className='flex items-center justify-center min-h-screen from-indigo-200 via-indigo-700 to-indigo-800 bg-gradient-to-br'>
+            <div className='w-full max-w-lg px-10 py-8 mx-auto bg-white rounded-lg shadow-xl'>
+                <div className='max-w-md mx-auto space-y-6'>
+                    <Image className='h-24' priority src={DGlogo} alt="Logo" />
+                </div>
+            </div>
+        </main>
+    );
 }
