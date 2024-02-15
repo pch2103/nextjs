@@ -16,7 +16,7 @@ export default async function Home(props) {
                     <Image className='h-20' priority src={DGlogo} alt="Logo"/>
                 </div>
                 <div>
-                    <Item page = { page }/>
+                    <Item page = { page } url = { URL }/>
                 </div>
             </div>
 
