@@ -3,7 +3,7 @@ import DGlogo from "../public/DG-logo.svg";
 import {LoadData} from "@/app/utils";
 import Item from "@/app/item";
 
-export default async function Home(props) {
+export default async function Home() {
     const URL = 'https://strapi.cherenkov.xyz/api/itv-pic-header-texts'
 
     const page = await LoadData(URL);
